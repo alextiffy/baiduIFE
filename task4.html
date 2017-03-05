@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布局居中定位</title>
+
+	<style type="text/css">
+		body{
+
+			
+		}
+
+		#container{
+			width: 400px;
+			height: 200px;
+			background-color: #ccc;
+
+			margin: auto;
+
+  			position: absolute;  
+  			top: 0; left: 0; bottom: 0; right: 0;  
+
+
+		}
+		.circle{
+			width:50px;
+			height: 50px;
+			background-color: #fc0;
+			position: absolute;
+
+		
+			/**
+	border-radius: 50px;
+			**/
+		}
+
+		.lt{
+			top:0px;
+			left: 0px;
+			border-bottom-right-radius: 50px;
+		}
+
+		.rg{
+
+			bottom:0;
+			right:  0;
+			overflow: hidden;
+			border-top-left-radius: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="circle lt">top</div>
+		<div class="circle rg" >bot</div>
+	</div>
+</body>
+</html>
