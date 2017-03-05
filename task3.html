@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task3 三栏布局</title>
+	
+	<style type="text/css">
+		.left{ width: 200px;  border:solid 1px green; float: left; position: relative;}
+		.right{ width: 120px;  float: right; background-color: #fff; border:solid 1px #000;  text-align: center;}
+		.right img{ margin-top: 20px ; }
+
+		.left img{ margin: 20px ; }
+
+		.left img+span{ corlor:green; position: absolute;top:20px; right: 10px;}
+
+		#container{
+			width: 95%;
+			height: 100%;
+
+			padding: 20px;
+			background-color: #eee;
+			border:solid 1px #999;
+
+		}
+
+		.main{ margin-left: 220px; }
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="left">
+			<img src="#" alt="" width="80px" height="80px">
+			<span>秦豫梦之队</span>
+			
+		</div>
+
+		<div class="right">
+			<img src="#" alt="" width="80px" height="80px">
+			<img src="#" alt="" width="80px" height="80px">
+			<img src="#" alt="" width="80px" height="80px">
+		</div>
+
+		<div class="main">
+			<h3>团队介绍</h3>
+			<p>前端介绍只是我一个人，已经接触前端多年从来不系统，希望通过把百度学院的课程做一遍，巩固知识，查漏补缺，期待成为一个优秀的前端</p>
+			<p>专注细节 多思多看 </p>
+			<p>看标准 问为什么</p>
+			<p>不依赖框架</p>
+			<p>能够组件化开发</p>
+			<p>前端流程化</p>
+			<p>尽量做到最好</p>
+			<p>加油、加油 、加油</p>
+
+		</div>
+	</div>
+</body>
+</html>
