@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		#a{display: block;}
+		#b{display: none;}
+
+		/****样式表美好***/
+
+	</style>
+		
+</head>
+<body>
+
+<div>
+	<form id="">
+		<label for="atsc">在校生</label>
+		<input type="radio" id="atsc" name="atschool" checked onclick="radioSelected('a','b')">
+
+		<label for="notsc">非校生</label>
+		<input type="radio" id="notsc"name="atschool" onclick="radioSelected('b','a')">
+
+		<div id="a">
+			<label for="lbl_scname">学校名称</label>
+			<select>
+				<option>北京理工大学</option>
+				<option>清华大学</option>
+				<option>石油大学大学</option>
+				<option>科技大学</option>
+				<option>地质大学</option>
+			</select>
+		</div>
+
+		<div id="b">
+			<label for="lbl_scname">就业单位</label>
+			<input type="text" id="dw"name="dw">
+		</div>
+
+
+	</form>
+
+</div>
+	<script type="text/javascript">
+		function $(id) {
+			return document.getElementById(id);
+		}
+
+		function radioSelected(id,sid){
+			
+					$(id).style.display="block";
+					$(sid).style.display="none";
+				
+		}
+
+	</script>
+</body>
+</html>
